@@ -1,18 +1,89 @@
+.body {
+  background: var(--blue);
+  background-image: url('/icons/symbol.svg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+  background-size: auto 80vh;
+  color: var(--text);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
+  padding-left: 20rem;
   height: 100vh;
-  max-width: 992px;
-  margin: 0 auto;
-  padding: 2.5rem 2rem;
+  max-width: 800px;
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
-.container section {
-  flex: 1;
+.container > img {
+  width: 22rem;
+  margin-bottom: 4rem;
+}
 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6.25rem;
-  align-content: center;
+.container > strong {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.container div.githubText {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.container div.githubText p {
+  color: var(--text-highlight);
+  font-weight: 500;
+  margin-left: 1.5rem;
+  max-width: 14rem;
+}
+
+.container div.inputDiv {
+  width: 24rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container div.inputDiv input {
+  width: 20rem;
+  height: 4rem;
+
+  padding: 2rem;
+  background: linear-gradient(
+    to right,
+    rgb(73, 83, 184),
+    rgba(73, 83, 184, 20%)
+  );
+  color: var(--text-highlight);
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.container div.inputDiv input::placeholder {
+  color: var(--text-highlight);
+}
+
+.container div.inputDiv button {
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  background: var(--blue-dark);
+  border-radius: 0 5px 5px 0;
+  font-size: 0px;
 }
