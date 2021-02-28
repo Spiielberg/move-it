@@ -1,0 +1,93 @@
+.container {
+  padding-left: 20rem;
+  height: 100vh;
+  max-width: 800px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container > img {
+  width: 22rem;
+  margin-bottom: 4rem;
+}
+
+.container > strong {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.container div.githubText {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.container div.githubText p {
+  color: var(--text-highlight);
+  font-weight: 500;
+  margin-left: 1.5rem;
+  max-width: 14rem;
+}
+
+.container div.inputDiv {
+  width: 24rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container div.inputDiv input {
+  width: 20rem;
+  height: 64px;
+
+  padding: 32px;
+  background: linear-gradient(
+    to right,
+    rgb(73, 83, 184),
+    rgba(73, 83, 184, 20%)
+  );
+  color: var(--white);
+  font-weight: 500;
+  border: 1.5px solid rgba(0, 0, 0, 0%);
+  border-radius: 5px 0 0 5px;
+}
+
+.container div.inputDiv input:hover,
+.container div.inputDiv input:focus {
+  outline: none;
+  border: 1.5px solid #414aa3;
+}
+
+.container div.inputDiv input::placeholder {
+  color: var(--text-highlight);
+  font-weight: 500;
+}
+
+.container div.inputDiv button {
+  width: 67px;
+  height: 67px;
+  border: none;
+  background: var(--blue-dark);
+  border-radius: 0 5px 5px 0;
+  font-size: 0px;
+
+  transition: filter 0.2s;
+}
+
+.container div.inputDiv button:hover {
+  filter: brightness(0.9);
+}
+
+.container div.inputDiv button:focus {
+  outline: none;
+  border: 1.5px solid #414aa3;
+}
+
+.container div.inputDiv button:active {
+  background: var(--green);
+}

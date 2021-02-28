@@ -22,6 +22,7 @@ interface ChallengesContextData {
   resetChallenge: () => void;
   completeChallenge: () => void;
   closeLevelUpModal: () => void;
+  resetValues: () => void;
 }
 
 interface ChallengesProviderProps {
@@ -107,6 +108,12 @@ export function ChallengesProvider({
     setIsLevelUpModalOpen(false);
   }
 
+  function resetValues() {
+    setLevel(1);
+    setCurrentExperience(0);
+    setChallengesCompleted(0);
+  }
+
   return (
     <ChallengesContext.Provider
       value={{
@@ -120,6 +127,7 @@ export function ChallengesProvider({
         resetChallenge,
         completeChallenge,
         closeLevelUpModal,
+        resetValues,
       }}
     >
       {children}

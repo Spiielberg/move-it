@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { GetServerSideProps } from 'next';
 import Router from 'next/router';
 
+import SideBar from '../components/SideBar';
 import ExperienceBar from '../components/ExperienceBar';
 import Profile from '../components/Profile';
 import CompletedChallenges from '../components/CompletedChallenges';
@@ -39,20 +40,24 @@ export default function Challenge(props: ChallengeProps) {
           <title>Desafio | move.it</title>
         </Head>
 
-        <ExperienceBar />
+        <SideBar />
 
-        <CountdownProvider>
-          <section>
-            <div>
-              <Profile />
-              <CompletedChallenges />
-              <Countdown />
-            </div>
-            <div>
-              <ChallengeBox />
-            </div>
-          </section>
-        </CountdownProvider>
+        <>
+          <ExperienceBar />
+
+          <CountdownProvider>
+            <section>
+              <div>
+                <Profile />
+                <CompletedChallenges />
+                <Countdown />
+              </div>
+              <div>
+                <ChallengeBox />
+              </div>
+            </section>
+          </CountdownProvider>
+        </>
       </div>
     </ChallengesProvider>
   );

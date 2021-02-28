@@ -1,0 +1,16 @@
+.container {
+  top: 0;
+  left: 0;
+  position: fixed;
+
+  width: 7rem;
+  height: 100vh;
+
+  background: var(--white);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+}
+
+.container img {
+  cursor: pointer;
+}
