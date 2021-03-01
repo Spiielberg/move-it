@@ -4,7 +4,7 @@
   position: fixed;
 
   width: 7rem;
-  height: 100vh;
+  height: 100%;
 
   background: var(--white);
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
